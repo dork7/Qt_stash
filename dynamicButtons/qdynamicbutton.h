@@ -20,7 +20,7 @@ public:
 private:
 
       // Pressing and holding for one full second constitutes a "longpress", set whatever value in milliseconds you want here.
-      static const quint64 MY_LONG_PRESS_THRESHOLD=1000;
+      static const quint64 MY_LONG_PRESS_THRESHOLD = 1000;
     int buttonID = 0;   // Local variable number of the button
     bool isPressed = false;
 

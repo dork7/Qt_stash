@@ -31,7 +31,8 @@ private slots:
     void slotGetNumber();           // SLOT for getting number of the dynamic buttons
 
 private:
-     QDynamicButton *button;
+    QDynamicButton *button;
+    QDynamicButton *button2;
     Ui::MainWindow *ui;
 };
 

@@ -18,17 +18,22 @@ MainWindow::MainWindow(QWidget *parent) :
     QScroller::grabGesture(ui->scrollArea->viewport(),QScroller::LeftMouseButtonGesture);
 
     qTim->start();
-      for (int i = 0; i < 100; ++i){
+      for (int i = 0; i < 10; ++i){
           button = new QDynamicButton(this);  // Create a dynamic button object
+           button2 = new QDynamicButton(this);  // Create a dynamic button object
           /* Set the text with number of button
            * */
-          button->setText("button " + QString::number(button->getID()));
+           button->setText("button 1" + QString::number(button->getID()));
+           button2->setText("button 2" + QString::number(button->getID()));
           /* Adding a button to the bed with a vertical layout
            * */
           ui->verticalLayout_2->addWidget(button);
+          ui->verticalLayout_4->addWidget(button2);
+
           /* Connect the signal to the slot pressing buttons produce numbers
            * */
           connect(button, SIGNAL(clicked()), this, SLOT(slotGetNumber()));
+          connect(button2, SIGNAL(clicked()), this, SLOT(slotGetNumber()));
     }
       qDebug() << "_ _ " << qTim->elapsed();
 
