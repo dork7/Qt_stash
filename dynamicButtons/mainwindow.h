@@ -26,11 +26,13 @@ protected:
 protected slots:
 
 private slots:
+    void  ScrollToEnd();
 //    void on_addButton_clicked();    // SLOT-handler pressing add button
 //    void on_deleteButton_clicked(); // SLOT-handler pressing the delete button
     void slotGetNumber();           // SLOT for getting number of the dynamic buttons
 
 private:
+    QWidget* mLastChild;
     QDynamicButton *button;
     QDynamicButton *button2;
     Ui::MainWindow *ui;

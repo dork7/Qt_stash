@@ -28,27 +28,27 @@ int QDynamicButton::getID()
  * */
 int QDynamicButton::ResID = 0;
 
-void QDynamicButton::mousePressEvent(QMouseEvent *event)
-{
-    // Remeber last time mousr was pressed
-     qDebug() << " mousePressEvent";
+//void QDynamicButton::mousePressEvent(QMouseEvent *event)
+//{
+//    // Remeber last time mousr was pressed
+//     qDebug() << " mousePressEvent";
 
-    isPressed = true;
+//    isPressed = true;
 
-    QTimer::singleShot(MY_LONG_PRESS_THRESHOLD, this, SLOT(mousePressedSLOT()));
-}
+//    QTimer::singleShot(MY_LONG_PRESS_THRESHOLD, this, SLOT(mousePressedSLOT()));
+//}
 
-void QDynamicButton::mouseReleaseEvent(QMouseEvent *event)
-{
-    isPressed = false;
+//void QDynamicButton::mouseReleaseEvent(QMouseEvent *event)
+//{
+//    isPressed = false;
 
-    qDebug() << " mouseReleaseEvent";
+//    qDebug() << " mouseReleaseEvent";
 
-}
-void QDynamicButton::mousePressedSLOT()
-{
-    if(isPressed){
-        qDebug() << "worked";
-    }
+//}
+//void QDynamicButton::mousePressedSLOT()
+//{
+//    if(isPressed){
+//        qDebug() << "worked";
+//    }
 
-}
+//}

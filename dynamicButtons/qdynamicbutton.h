@@ -26,8 +26,8 @@ private:
 
 protected:
     // Declare that we are overriding QWidget's events for mouse press and release
-      void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
-      void mouseReleaseEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+//      void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+//      void mouseReleaseEvent(QMouseEvent *) Q_DECL_OVERRIDE;
 
 signals:
           // Our custom signal to emit once a longpress is detected.
@@ -36,7 +36,7 @@ signals:
 
 public slots:
 
-        void mousePressedSLOT();
+//        void mousePressedSLOT();
 
 };
 

@@ -18,22 +18,27 @@ MainWindow::MainWindow(QWidget *parent) :
     QScroller::grabGesture(ui->scrollArea->viewport(),QScroller::LeftMouseButtonGesture);
 
     qTim->start();
-      for (int i = 0; i < 10; ++i){
+      for (int i = 0; i < 2; ++i){
           button = new QDynamicButton(this);  // Create a dynamic button object
-           button2 = new QDynamicButton(this);  // Create a dynamic button object
+//           button2 = new QDynamicButton(this);  // Create a dynamic button object
           /* Set the text with number of button
            * */
-           button->setText("button 1" + QString::number(button->getID()));
-           button2->setText("button 2" + QString::number(button->getID()));
+           button->setText("Song" + QString::number(button->getID()));
+//           button2->setText("Time" + QString::number(button->getID()));
           /* Adding a button to the bed with a vertical layout
            * */
-          ui->verticalLayout_2->addWidget(button);
-          ui->verticalLayout_4->addWidget(button2);
+           ui->verticalLayout_2->addWidget(button);
+//           ui->verticalLayout_4->addWidget(button2);
+
+//           ui->verticalLayout_6->addWidget(button);
+//           ui->verticalLayout_7->addWidget(button2);
 
           /* Connect the signal to the slot pressing buttons produce numbers
            * */
           connect(button, SIGNAL(clicked()), this, SLOT(slotGetNumber()));
-          connect(button2, SIGNAL(clicked()), this, SLOT(slotGetNumber()));
+          mLastChild = button;
+//          connect(button2, SIGNAL(clicked()), this, SLOT(slotGetNumber()));
+          QTimer::singleShot( 5, this, SLOT(ScrollToEnd()) );
     }
       qDebug() << "_ _ " << qTim->elapsed();
 
@@ -48,7 +53,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 }
-
+void MainWindow::ScrollToEnd()
+{
+    qDebug() << " called ";
+    //mScrollArea->verticalScrollBar()->setValue( mScrollArea->verticalScrollBar()->maximum() );
+    ui->scrollArea->ensureWidgetVisible( mLastChild , 0, 0 );
+}
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -62,6 +72,8 @@ void MainWindow::slotGetNumber()
     /* Then set the number of buttons in lineEdit,
      * which is contained in the dynamic button
      * */
+    QTimer::singleShot( 5, this, SLOT(ScrollToEnd()) );
+
     qDebug() << button->getID();
     /* That is the key number is set to lineEdit field only
      * when we press one of the dynamic keys,
