@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>509</width>
     <height>426</height>
+=======
+    <width>917</width>
+    <height>439</height>
+>>>>>>> 0e944406adf0a181ad153713c0e7654782132ba5
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,11 +25,24 @@
       <property name="currentIndex">
        <number>0</number>
       </property>
+<<<<<<< HEAD
       <widget class="QWidget" name="tab">
        <attribute name="title">
         <string>Tab 1</string>
        </attribute>
        <layout class="QHBoxLayout" name="horizontalLayout">
+=======
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>445</width>
+         <height>360</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+>>>>>>> 0e944406adf0a181ad153713c0e7654782132ba5
         <item>
          <widget class="QScrollArea" name="scrollArea">
           <property name="widgetResizable">
@@ -94,8 +112,41 @@
       </widget>
      </widget>
     </item>
+<<<<<<< HEAD
    </layout>
   </widget>
+=======
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page"/>
+      <widget class="QWidget" name="page_2"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>917</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+>>>>>>> 0e944406adf0a181ad153713c0e7654782132ba5
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

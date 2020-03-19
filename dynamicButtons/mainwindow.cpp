@@ -18,7 +18,11 @@ MainWindow::MainWindow(QWidget *parent) :
     QScroller::grabGesture(ui->scrollArea->viewport(),QScroller::LeftMouseButtonGesture);
 
     qTim->start();
+<<<<<<< HEAD
       for (int i = 0; i < 2; ++i){
+=======
+      for (int i = 0; i < 100; ++i){
+>>>>>>> 0e944406adf0a181ad153713c0e7654782132ba5
           button = new QDynamicButton(this);  // Create a dynamic button object
 //           button2 = new QDynamicButton(this);  // Create a dynamic button object
           /* Set the text with number of button
