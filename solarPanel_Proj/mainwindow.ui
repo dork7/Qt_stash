@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1065</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="styleSheet">
+           <string notr="true">Background-color: rgb(93, 190, 255)</string>
+          </property>
+          <property name="tabKeyNavigation">
+           <bool>true</bool>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="dragDropOverwriteMode">
+           <bool>false</bool>
+          </property>
+          <property name="dragDropMode">
+           <enum>QAbstractItemView::NoDragDrop</enum>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string>Solar Panel</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Power Managment</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Core</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>C-States</string>
+             </property>
+             <property name="checkState">
+              <enum>Unchecked</enum>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>P-States</string>
+             </property>
+             <property name="checkState">
+              <enum>Unchecked</enum>
+             </property>
+            </item>
+           </item>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_2" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_6" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QWidget" name="widget_10" native="true"/>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_9" native="true"/>
+           </item>
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_8" native="true"/>
+           </item>
+           <item>
+            <widget class="Line" name="line_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_7" native="true"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QSplitter" name="splitter_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QWidget" name="widget_4" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QWidget" name="widget_11" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>60</height>
+               </size>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <property name="spacing">
+                <number>2</number>
+               </property>
+               <property name="leftMargin">
+                <number>2</number>
+               </property>
+               <property name="rightMargin">
+                <number>2</number>
+               </property>
+               <property name="bottomMargin">
+                <number>2</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(209, 211, 209);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="text">
+                  <string>Output Window</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Properties :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="c_state_scroll">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>-132</y>
+                 <width>462</width>
+                 <height>267</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout">
+                <property name="leftMargin">
+                 <number>2</number>
+                </property>
+                <property name="topMargin">
+                 <number>2</number>
+                </property>
+                <property name="rightMargin">
+                 <number>2</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>2</number>
+                </property>
+                <property name="spacing">
+                 <number>4</number>
+                </property>
+                <item row="7" column="4">
+                 <widget class="QLabel" name="label_15">
+                  <property name="text">
+                   <string>0x</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QPushButton" name="btn_C1">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                  </property>
+                  <property name="text">
+                   <string>C1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QPushButton" name="btn_C3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                  </property>
+                  <property name="text">
+                   <string>C3</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="4">
+                 <widget class="QLabel" name="label_13">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>0x</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QSpinBox" name="spinBox">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="2">
+                 <widget class="QSpinBox" name="spinBox_10">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="2">
+                 <widget class="QSpinBox" name="spinBox_8">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QSpinBox" name="spinBox_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="QSpinBox" name="spinBox_11">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="3">
+                 <widget class="QTextEdit" name="textEdit_7">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);
+ </string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="4">
+                 <widget class="QLabel" name="label_10">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>0x</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QSpinBox" name="spinBox_6">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="2">
+                 <widget class="QSpinBox" name="spinBox_12">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="5">
+                 <widget class="QTextEdit" name="textEdit_10">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QSpinBox" name="spinBox_4">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="4">
+                 <widget class="QLabel" name="label_14">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>0x</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="5">
+                 <widget class="QTextEdit" name="textEdit_4">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="5">
+                 <widget class="QTextEdit" name="textEdit_9">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="5">
+                 <widget class="QLabel" name="label_8">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Sub-State</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QSpinBox" name="spinBox_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QPushButton" name="btn_C9">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                  </property>
+                  <property name="text">
+                   <string>C9</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="4">
+                 <widget class="QLabel" name="label_11">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>0x</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QPushButton" name="btn_C7">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                  </property>
+                  <property name="text">
+                   <string>C7</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="5">
+                 <widget class="QTextEdit" name="textEdit_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_4">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>C-States</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <widget class="QTextEdit" name="textEdit_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);
+ </string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_7">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Core
+Exclusion</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="4">
+                 <widget class="QLabel" name="label_9">
+                  <property name="text">
+                   <string>0x</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QSpinBox" name="spinBox_7">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="3">
+                 <widget class="QTextEdit" name="textEdit_14">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QPushButton" name="btn_C6">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                  </property>
+                  <property name="text">
+                   <string>C6</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_5">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Fail-Tol %</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="3">
+                 <widget class="QTextEdit" name="textEdit_12">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <widget class="QTextEdit" name="textEdit_6">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);
+ </string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="QSpinBox" name="spinBox_9">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="3">
+                 <widget class="QTextEdit" name="textEdit_8">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="4">
+                 <widget class="QLabel" name="label_12">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>0x</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="3">
+                 <widget class="QTextEdit" name="textEdit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_6">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>ExitOnPass</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="0">
+                 <widget class="QPushButton" name="btn_C10">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                  </property>
+                  <property name="text">
+                   <string>C10</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="2">
+                 <widget class="QSpinBox" name="spinBox_14">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="5">
+                 <widget class="QTextEdit" name="textEdit_15">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QSpinBox" name="spinBox_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QPushButton" name="btn_C8">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                  </property>
+                  <property name="text">
+                   <string>C8</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="1">
+                 <widget class="QSpinBox" name="spinBox_13">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="5">
+                 <widget class="QTextEdit" name="textEdit_11">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="5">
+                 <widget class="QTextEdit" name="textEdit_13">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="undo_clear_widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <property name="leftMargin">
+                <number>2</number>
+               </property>
+               <property name="topMargin">
+                <number>2</number>
+               </property>
+               <property name="rightMargin">
+                <number>2</number>
+               </property>
+               <property name="bottomMargin">
+                <number>2</number>
+               </property>
+               <item>
+                <widget class="QTextEdit" name="txt_c_states">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 5px;Background-color: rgb(93, 190, 255);
+color: rgb(0, 0, 0);</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>60</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                 </property>
+                 <property name="text">
+                  <string>Clear</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>60</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                 </property>
+                 <property name="text">
+                  <string>Undo</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="p_state_widget" native="true">
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="spacing">
+                <number>2</number>
+               </property>
+               <property name="leftMargin">
+                <number>2</number>
+               </property>
+               <property name="topMargin">
+                <number>2</number>
+               </property>
+               <property name="rightMargin">
+                <number>2</number>
+               </property>
+               <property name="bottomMargin">
+                <number>2</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="text">
+                  <string>P-State</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>472</width>
+                    <height>68</height>
+                   </rect>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_2">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_17">
+                     <property name="text">
+                      <string>P-state_dummy data</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QWidget" name="apply_reset_widget" native="true">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <property name="spacing">
+                <number>2</number>
+               </property>
+               <property name="leftMargin">
+                <number>2</number>
+               </property>
+               <property name="topMargin">
+                <number>2</number>
+               </property>
+               <property name="rightMargin">
+                <number>2</number>
+               </property>
+               <property name="bottomMargin">
+                <number>2</number>
+               </property>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                 </property>
+                 <property name="text">
+                  <string>Apply</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 85, 127);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+                 </property>
+                 <property name="text">
+                  <string>Reset</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="widget_5" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Test Time :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPlainTextEdit" name="txtTest">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="plainText">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1065</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
