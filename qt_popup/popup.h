@@ -30,6 +30,7 @@ public:
     QString mGetTimeCode();
 
     void rePosition(int x, int y);
+    void setSize(int h, int w);
 protected:
     void paintEvent(QPaintEvent *event);    // The background will be drawn through the redraw method
 
@@ -41,7 +42,6 @@ public slots:
     void show();                            /* own widget displaying method
                                              * It is necessary to pre-animation settings
                                                * */
-    void setSize(int h, int w);
     void setInputVal_SLOT();
     void hideAnimation();                   // Slot start the animation hide
     void hide();                            /* At the end of the animation, it is checked in a given slot,
