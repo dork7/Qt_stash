@@ -5,6 +5,12 @@ PopUp::PopUp(QWidget *parent) : QWidget(parent)
 {
     QObject::connect(&btn1, SIGNAL(clicked()), this, SLOT(setInputVal_SLOT()));
 
+    QRect widgetRect = this->geometry();
+    widgetRect.moveTopLeft(this->parentWidget()->mapToGlobal(widgetRect.topLeft()));
+
+//    qDebug() << widgetRect.x();
+//    qDebug() << widgetRect.y();
+
     setWindowFlags(Qt::FramelessWindowHint |        // Disable window decoration
                    Qt::Tool |                       // Discard display in a separate window
                    Qt::WindowStaysOnTopHint);       // Set on top of all windows
@@ -14,7 +20,7 @@ PopUp::PopUp(QWidget *parent) : QWidget(parent)
     animation.setTargetObject(this);                // Set the target animation
     animation.setPropertyName("popupOpacity");      //
     connect(&animation, &QAbstractAnimation::finished, this, &PopUp::hide);
-    this->setMinimumSize(QSize(200,200));
+    this->setMinimumSize(QSize(400,241));
 
 
     label.setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
@@ -101,10 +107,10 @@ void PopUp::show()
     animation.setStartValue(0.0);   // The start value is 0 (fully transparent widget)
     animation.setEndValue(1.0);     // End - completely opaque widget
 
-    setGeometry(QApplication::desktop()->availableGeometry().width() - 36 - width() + QApplication::desktop() -> availableGeometry().x(),
-                QApplication::desktop()->availableGeometry().height() - 36 - height() + QApplication::desktop() -> availableGeometry().y(),
-                width(),
-                height());
+//    setGeometry(QApplication::desktop()->availableGeometry().width() - 36 - width() + QApplication::desktop() -> availableGeometry().x(),
+//                QApplication::desktop()->availableGeometry().height() - 36 - height() + QApplication::desktop() -> availableGeometry().y(),
+//                width(),
+//                height());
     QWidget::show();
 
     animation.start();
@@ -149,4 +155,38 @@ void PopUp::setPopupOpacity(float opacity)
 float PopUp::getPopupOpacity() const
 {
     return popupOpacity;
+}
+
+void PopUp::mouseReleaseEvent ( QMouseEvent * event )
+{
+    Q_UNUSED(event)
+    b_mousePressed = false;
+}
+
+void PopUp::mouseMoveEvent ( QMouseEvent * event )
+{
+    Q_UNUSED(event)
+
+    if(b_mousePressed)
+    {
+        QPoint qpAppNewLoc(  (QCursor::pos().x() - iXdeffarace) , (QCursor::pos().y() - iYdeffarance)  );
+        this->setProperty("pos", qpAppNewLoc);
+    }
+}
+void PopUp::mousePressEvent ( QMouseEvent * event)
+{
+    Q_UNUSED(event)
+    b_mousePressed = true;
+    QPoint qpMousePressedPoint = QCursor::pos();
+    QPoint qpApploc = this->pos();
+    iXdeffarace = qpMousePressedPoint.x() - qpApploc.x();
+    iYdeffarance = qpMousePressedPoint.y() - qpApploc.y();
+}
+void PopUp::setSize(int h, int w){
+    qDebug() << " -> " << h << " - " << w;
+    this->setMinimumSize(QSize(w,h));
+}
+void PopUp::rePosition(int x, int y){
+    QPoint qpAppNewLoc( x,y );
+    this->setProperty("pos", qpAppNewLoc);
 }

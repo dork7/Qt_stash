@@ -29,24 +29,34 @@ public:
     explicit PopUp(QWidget *parent = nullptr);
     QString mGetTimeCode();
 
+    void rePosition(int x, int y);
 protected:
     void paintEvent(QPaintEvent *event);    // The background will be drawn through the redraw method
 
+    void mouseMoveEvent(QMouseEvent *event);
+    void mouseReleaseEvent(QMouseEvent *event);
+    void mousePressEvent(QMouseEvent *event);
 public slots:
     void setPopupText(const QString& text); // Setting text notification
     void show();                            /* own widget displaying method
                                              * It is necessary to pre-animation settings
                                                * */
+    void setSize(int h, int w);
     void setInputVal_SLOT();
-private slots:
     void hideAnimation();                   // Slot start the animation hide
     void hide();                            /* At the end of the animation, it is checked in a given slot,
+private slots:
                                              * Does the widget visible, or to hide
                                              * */
 
 signals:
     void valueEntered_SIGNAL(QString);
 private:
+
+    int iXdeffarace = -1;
+    int iYdeffarance  = -1;
+    bool b_mousePressed;
+
     QLabel label;
     QPushButton btn1;
     QLineEdit popUpInput;
